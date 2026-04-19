@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Flashcards | CodeAlpha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><i class="fas fa-lightbulb"></i> Flashcard Quiz</h1>
+        
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <div class="toolbar">
+            <button id="add-card-btn" class="btn-main"><i class="fas fa-plus"></i> Add Card</button>
+            <button id="clear-btn" class="btn-danger"><i class="fas fa-trash"></i> Clear All</button>
+        </div>
+
+        <div id="card-container" class="card-holder"></div>
+
+        <div class="navigation">
+            <button id="prev" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <span id="current-index">0 / 0</span>
+            <button id="next" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div id="modal-container" class="modal-overlay">
+        <div class="modal-content">
+            <h2><i class="fas fa-edit"></i> Create Card</h2>
+            <textarea id="question" placeholder="Enter your question here..."></textarea>
+            <textarea id="answer" placeholder="Enter the answer here..."></textarea>
+            <div class="modal-actions">
+                <button id="save-card" class="btn-save">Save Card</button>
+                <button id="close-modal" class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
